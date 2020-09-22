@@ -1,0 +1,24 @@
+<%= render "cabecalho" %>   <!-- aqui estamos chamando a PARTIAL "_cabecalho.html.erb" --> 
+
+<ul>
+    <li>
+        <a href = "/coins">  Cadastro de Moédas  ( LINK NORMAL DO HTML) </a> 
+    </li>
+    <li>
+        <!-- vamos utilizar um HELPER (link_to) ao inves do codigo html -->
+        <%= link_to " Cadastro de Moédas  ( ATRAVEZ DO HELPER link_to do RUBY ON RAILS)", coins_path %>
+    </li>
+    <li>
+        <!-- vamos utilizar um HELPER (link_to) ao inves do codigo html -->
+        <%= link_to " Tipo de Mineração ", mining_types_path %>
+    </li>
+    <li>
+        <!-- vamos utilizar um HELPER (link_to) ao inves do codigo html -->
+        <%= link_to " Info Routes","/rails/info/routes" %>
+    </li>
+    
+</ul>
+
+<%= @aviso %> 
+
+<%= render "rodape" %> 

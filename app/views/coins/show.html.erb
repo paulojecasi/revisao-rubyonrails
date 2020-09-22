@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @coin.descricao %>
+</p>
+
+<p>
+  <strong>Acronimo:</strong>
+  <%= @coin.acronimo %>
+</p>
+
+<p>
+  <strong>Url imagem:</strong>
+  <%= image_tag @coin.url_imagem, width:50, height:50 %>  
+</p>
+
+<%= link_to 'Editar', edit_coin_path(@coin) %> |
+<%= link_to 'Voltar', coins_path %>
